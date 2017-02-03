@@ -23,9 +23,9 @@ object ScoreMatchDriver extends Serializable {
   // Commandline configuration parameters
   case class Config(inPath1: String, inPath2: String, outPath: String)
 
-  val optsParser = new scopt.OptionParser[Config]("cbdc-score-matcher") {
+  val optsParser = new scopt.OptionParser[Config]("csv-file-matcher") {
 
-    head("cbdc-score-matcher")
+    head("csv-file-matcher")
     opt[String]('i', "inPath") action { (x, c) => c.copy(inPath1 = x) } text ("inPath is a string")
     opt[String]('a', "inPath") action { (x, c) => c.copy(inPath2 = x) } text ("inPath is a string")
     opt[String]('o', "outPath") action { (x, c) => c.copy(outPath = x) } text ("outPath is a string")
