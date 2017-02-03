@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.mohek.bigutils"
+		module="spark-csv-file-comparator_2.10"
+		revision="1.0-SNAPSHOT"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170203175732"/>
+	<dependencies>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.3" status="release" pubdate="20150324163126" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+				<metadata-artifact status="successful" details="" size="12711" time="1614" location="C:\Users\hai\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.1.3.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="successful" details="" size="280928" time="5897" location="C:\Users\hai\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.3" status="release" pubdate="20150324163006" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<metadata-artifact status="successful" details="" size="4191" time="1571" location="C:\Users\hai\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.1.3.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.3"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="successful" details="" size="455041" time="7743" location="C:\Users\hai\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.12" status="release" pubdate="20141204214743" resolver="public" artresolver="public" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="28">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="23678" time="2051" location="C:\Users\hai\.ivy2\cache\junit\junit\ivy-4.12.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\junit\junit\ivy-4.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="314932" time="7006" location="C:\Users\hai\.ivy2\cache\junit\junit\jars\junit-4.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120710023802" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<metadata-artifact status="successful" details="" size="766" time="1419" location="C:\Users\hai\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="junit" name="junit" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.12"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="successful" details="" size="45024" time="2149" location="C:\Users\hai\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.10">
+			<revision name="2.2.6" status="release" pubdate="20160106002059" resolver="public" artresolver="public" homepage="http://www.scalatest.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="5399" time="1781" location="C:\Users\hai\.ivy2\cache\org.scalatest\scalatest_2.10\ivy-2.2.6.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.scalatest\scalatest_2.10\ivy-2.2.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.6/scalatest_2.10-2.2.6.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalatest_2.10" type="bundle" ext="jar" status="successful" details="" size="7544400" time="125539" location="C:\Users\hai\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.6/scalatest_2.10-2.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.6" status="release" pubdate="20150918150538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2680" time="0" location="C:\Users\hai\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.2.6"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="successful" details="" size="3206180" time="32401" location="C:\Users\hai\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.6" status="release" pubdate="20150918150528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="26">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2517" time="0" location="C:\Users\hai\.ivy2\cache\org.scala-lang\scala-library\ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
+				<caller organisation="com.databricks" name="spark-csv_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.2.0"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.10" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0.2"/>
+				<caller organisation="org.scalatest" name="scalatest_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.2.6"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="com.github.scopt" name="scopt_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="3.3.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="org.scalaj" name="scalaj-collection_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="1.5"/>
+				<caller organisation="com.databricks" name="spark-avro_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="2.0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="successful" details="" size="7132001" time="82555" location="C:\Users\hai\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.10.5" status="release" pubdate="20150227072430" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2517" time="0" location="C:\Users\hai\.ivy2\cache\org.scala-lang\scala-library\ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.pom"/>
+				<evicted-by rev="2.10.6"/>
+				<caller organisation="com.databricks" name="spark-csv_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.2.0"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.10" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0.2"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="com.github.scopt" name="scopt_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="3.3.0"/>
+				<caller organisation="org.scalaj" name="scalaj-collection_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="1.5"/>
+				<caller organisation="com.databricks" name="spark-avro_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="2.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.5"/>
+				<caller organisation="org.scalaj" name="scalaj-collection_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="1.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.5"/>
+				<caller organisation="com.databricks" name="spark-csv_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.2.0"/>
+				<caller organisation="com.github.scopt" name="scopt_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="3.3.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.5"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.10" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaj" name="scalaj-collection_2.10">
+			<revision name="1.5" status="release" pubdate="20130713212939" resolver="public" artresolver="public" homepage="https://github.com/scalaj/scalaj-collection" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="Apache" url="http://www.opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="successful" details="" size="1453" time="1468" location="C:\Users\hai\.ivy2\cache\org.scalaj\scalaj-collection_2.10\ivy-1.5.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.scalaj\scalaj-collection_2.10\ivy-1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaj/scalaj-collection_2.10/1.5/scalaj-collection_2.10-1.5.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalaj-collection_2.10" type="jar" ext="jar" status="successful" details="" size="169615" time="3279" location="C:\Users\hai\.ivy2\cache\org.scalaj\scalaj-collection_2.10\jars\scalaj-collection_2.10-1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaj/scalaj-collection_2.10/1.5/scalaj-collection_2.10-1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.databricks" name="spark-csv_2.10">
+			<revision name="1.2.0" status="release" pubdate="20150807060909" resolver="public" artresolver="public" homepage="https://github.com/databricks/spark-csv" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Apache License, Verision 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="3807" time="1582" location="C:\Users\hai\.ivy2\cache\com.databricks\spark-csv_2.10\ivy-1.2.0.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.databricks\spark-csv_2.10\ivy-1.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/databricks/spark-csv_2.10/1.2.0/spark-csv_2.10-1.2.0.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spark-csv_2.10" type="jar" ext="jar" status="successful" details="" size="113861" time="3532" location="C:\Users\hai\.ivy2\cache\com.databricks\spark-csv_2.10\jars\spark-csv_2.10-1.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/databricks/spark-csv_2.10/1.2.0/spark-csv_2.10-1.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.univocity" name="univocity-parsers">
+			<revision name="1.5.1" status="release" pubdate="20150409042631" resolver="public" artresolver="public" homepage="http://github.com/uniVocity/univocity-parsers" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7764" time="1879" location="C:\Users\hai\.ivy2\cache\com.univocity\univocity-parsers\ivy-1.5.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.univocity\univocity-parsers\ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1.pom"/>
+				<caller organisation="com.databricks" name="spark-csv_2.10" conf="default, compile, runtime, master" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.2.0"/>
+				<artifacts>
+					<artifact name="univocity-parsers" type="jar" ext="jar" status="successful" details="" size="148962" time="3419" location="C:\Users\hai\.ivy2\cache\com.univocity\univocity-parsers\jars\univocity-parsers-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-csv">
+			<revision name="1.1" status="release" pubdate="20141117021846" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-csv/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<metadata-artifact status="successful" details="" size="14165" time="1611" location="C:\Users\hai\.ivy2\cache\org.apache.commons\commons-csv\ivy-1.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.apache.commons\commons-csv\ivy-1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom"/>
+				<caller organisation="com.databricks" name="spark-csv_2.10" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.2.0"/>
+				<artifacts>
+					<artifact name="commons-csv" type="jar" ext="jar" status="successful" details="" size="36888" time="1993" location="C:\Users\hai\.ivy2\cache\org.apache.commons\commons-csv\jars\commons-csv-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-csv/1.1/commons-csv-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.10" status="release" pubdate="20120213230820" resolver="public" artresolver="public" homepage="http://www.snakeyaml.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="17102" time="1739" location="C:\Users\hai\.ivy2\cache\org.yaml\snakeyaml\ivy-1.10.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.yaml\snakeyaml\ivy-1.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.10/snakeyaml-1.10.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="successful" details="" size="266959" time="6100" location="C:\Users\hai\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.10/snakeyaml-1.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-yaml">
+			<revision name="2.1.1" status="release" pubdate="20121112110122" resolver="public" artresolver="public" homepage="http://wiki.fasterxml.com/JacksonExtensionYAML" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<metadata-artifact status="successful" details="" size="3788" time="1466" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\ivy-2.1.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.1.1/jackson-dataformat-yaml-2.1.1.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-dataformat-yaml" type="jar" ext="jar" status="successful" details="" size="350411" time="6865" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\jars\jackson-dataformat-yaml-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.1.1/jackson-dataformat-yaml-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.1.1" status="release" pubdate="20121112052441" resolver="public" artresolver="public" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<metadata-artifact status="successful" details="" size="5598" time="1512" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.1.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.1.1/jackson-databind-2.1.1.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="jar" ext="jar" status="successful" details="" size="922643" time="11368" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\jars\jackson-databind-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.1.1/jackson-databind-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.1.1" status="release" pubdate="20121112050859" resolver="public" artresolver="public" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="17">
+				<metadata-artifact status="successful" details="" size="1862" time="1577" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.1.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.1/jackson-annotations-2.1.1.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="default, compile, runtime, master" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="jar" ext="jar" status="successful" details="" size="34477" time="1951" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\jars\jackson-annotations-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.1.1/jackson-annotations-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.1.1" status="release" pubdate="20121112051713" resolver="public" artresolver="public" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="16">
+				<metadata-artifact status="successful" details="" size="5637" time="4376" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.1.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.1.1/jackson-core-2.1.1.pom"/>
+				<caller organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-yaml" conf="default, compile, runtime, master" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.1.1"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="default, compile, runtime, master" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="jackson-core" type="jar" ext="jar" status="successful" details="" size="206379" time="5344" location="C:\Users\hai\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\jars\jackson-core-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.1.1/jackson-core-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jettison" name="jettison">
+			<revision name="1.3.7" status="release" pubdate="20141128032947" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="4330" time="1576" location="C:\Users\hai\.ivy2\cache\org.codehaus.jettison\jettison\ivy-1.3.7.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.codehaus.jettison\jettison\ivy-1.3.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.3.7" rev-constraint-default="1.3.7" rev-constraint-dynamic="1.3.7" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jettison" type="bundle" ext="jar" status="successful" details="" size="83626" time="3532" location="C:\Users\hai\.ivy2\cache\org.codehaus.jettison\jettison\bundles\jettison-1.3.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.xstream" name="xstream">
+			<revision name="1.4.8" status="release" pubdate="20150219003829" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<metadata-artifact status="successful" details="" size="13296" time="1757" location="C:\Users\hai\.ivy2\cache\com.thoughtworks.xstream\xstream\ivy-1.4.8.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.thoughtworks.xstream\xstream\ivy-1.4.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.4.8" rev-constraint-default="1.4.8" rev-constraint-dynamic="1.4.8" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="xstream" type="jar" ext="jar" status="successful" details="" size="538830" time="11672" location="C:\Users\hai\.ivy2\cache\com.thoughtworks.xstream\xstream\jars\xstream-1.4.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xpp3" name="xpp3_min">
+			<revision name="1.1.4c" status="release" pubdate="20071201143642" resolver="public" artresolver="public" homepage="http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Indiana University Extreme! Lab Software License, vesion 1.1.1" url="http://www.extreme.indiana.edu/viewcvs/~checkout~/XPP3/java/LICENSE.txt"/>
+				<license name="Public Domain" url="http://creativecommons.org/licenses/publicdomain"/>
+				<metadata-artifact status="successful" details="" size="1610" time="1418" location="C:\Users\hai\.ivy2\cache\xpp3\xpp3_min\ivy-1.1.4c.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\xpp3\xpp3_min\ivy-1.1.4c.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom"/>
+				<caller organisation="com.thoughtworks.xstream" name="xstream" conf="default, compile, runtime, master" rev="1.1.4c" rev-constraint-default="1.1.4c" rev-constraint-dynamic="1.1.4c" callerrev="1.4.8"/>
+				<artifacts>
+					<artifact name="xpp3_min" type="jar" ext="jar" status="successful" details="" size="24956" time="1599" location="C:\Users\hai\.ivy2\cache\xpp3\xpp3_min\jars\xpp3_min-1.1.4c.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xmlpull" name="xmlpull">
+			<revision name="1.1.3.1" status="release" pubdate="20070320054831" resolver="public" artresolver="public" homepage="http://www.xmlpull.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Public Domain" url="http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="386" time="1727" location="C:\Users\hai\.ivy2\cache\xmlpull\xmlpull\ivy-1.1.3.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\xmlpull\xmlpull\ivy-1.1.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom"/>
+				<caller organisation="com.thoughtworks.xstream" name="xstream" conf="default, compile, runtime, master" rev="1.1.3.1" rev-constraint-default="1.1.3.1" rev-constraint-dynamic="1.1.3.1" callerrev="1.4.8"/>
+				<artifacts>
+					<artifact name="xmlpull" type="jar" ext="jar" status="successful" details="" size="7188" time="1864" location="C:\Users\hai\.ivy2\cache\xmlpull\xmlpull\jars\xmlpull-1.1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="stax" name="stax-api">
+			<revision name="1.0.1" status="release" pubdate="20060831230914" resolver="public" artresolver="public" homepage="http://stax.codehaus.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1526" time="3282" location="C:\Users\hai\.ivy2\cache\stax\stax-api\ivy-1.0.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\stax\stax-api\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom"/>
+				<caller organisation="org.codehaus.jettison" name="jettison" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.3.7"/>
+				<artifacts>
+					<artifact name="stax-api" type="jar" ext="jar" status="successful" details="" size="26514" time="1881" location="C:\Users\hai\.ivy2\cache\stax\stax-api\jars\stax-api-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scopt" name="scopt_2.10">
+			<revision name="3.3.0" status="release" pubdate="20141215065234" resolver="public" artresolver="public" homepage="https://github.com/scopt/scopt" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="1675" time="1537" location="C:\Users\hai\.ivy2\cache\com.github.scopt\scopt_2.10\ivy-3.3.0.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.github.scopt\scopt_2.10\ivy-3.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.10/3.3.0/scopt_2.10-3.3.0.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scopt_2.10" type="jar" ext="jar" status="successful" details="" size="127095" time="3908" location="C:\Users\hai\.ivy2\cache\com.github.scopt\scopt_2.10\jars\scopt_2.10-3.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.10/3.3.0/scopt_2.10-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.clapper" name="grizzled-slf4j_2.10">
+			<revision name="1.0.2" status="release" pubdate="20140427195709" resolver="public" artresolver="public" homepage="https://github.com/bmc/grizzled-slf4j/#readme" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="BSD" url="http://software.clapper.org/grizzled-slf4j/license.html"/>
+				<metadata-artifact status="successful" details="" size="1915" time="1466" location="C:\Users\hai\.ivy2\cache\org.clapper\grizzled-slf4j_2.10\ivy-1.0.2.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.clapper\grizzled-slf4j_2.10\ivy-1.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.10/1.0.2/grizzled-slf4j_2.10-1.0.2.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="grizzled-slf4j_2.10" type="jar" ext="jar" status="successful" details="" size="6418" time="1985" location="C:\Users\hai\.ivy2\cache\org.clapper\grizzled-slf4j_2.10\jars\grizzled-slf4j_2.10-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.10/1.0.2/grizzled-slf4j_2.10-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404164248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<metadata-artifact status="no" details="" size="4434" time="0" location="C:\Users\hai\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.1.3"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.10" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.0.2"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.7.6"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="C:\Users\hai\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.4" status="release" pubdate="20111101041538" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="successful" details="" size="2689" time="1648" location="C:\Users\hai\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.6.4.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.6.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.pom"/>
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.7.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.databricks" name="spark-avro_2.10">
+			<revision name="2.0.1" status="release" pubdate="20150909022355" resolver="public" artresolver="public" homepage="https://github.com/databricks/spark-avro" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="5349" time="1506" location="C:\Users\hai\.ivy2\cache\com.databricks\spark-avro_2.10\ivy-2.0.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.databricks\spark-avro_2.10\ivy-2.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/databricks/spark-avro_2.10/2.0.1/spark-avro_2.10-2.0.1.pom"/>
+				<caller organisation="com.mohek.bigutils" name="spark-csv-file-comparator_2.10" conf="test, compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spark-avro_2.10" type="jar" ext="jar" status="successful" details="" size="93757" time="3511" location="C:\Users\hai\.ivy2\cache\com.databricks\spark-avro_2.10\jars\spark-avro_2.10-2.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/databricks/spark-avro_2.10/2.0.1/spark-avro_2.10-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro">
+			<revision name="1.7.6" status="release" pubdate="20140111031141" resolver="public" artresolver="public" homepage="http://avro.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<metadata-artifact status="successful" details="" size="5631" time="1595" location="C:\Users\hai\.ivy2\cache\org.apache.avro\avro\ivy-1.7.6.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.apache.avro\avro\ivy-1.7.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.6/avro-1.7.6.pom"/>
+				<caller organisation="com.databricks" name="spark-avro_2.10" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="2.0.1"/>
+				<artifacts>
+					<artifact name="avro" type="bundle" ext="jar" status="successful" details="" size="425587" time="6252" location="C:\Users\hai\.ivy2\cache\org.apache.avro\avro\bundles\avro-1.7.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.6/avro-1.7.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.4.1" status="release" pubdate="20120522102732" resolver="public" artresolver="public" homepage="http://commons.apache.org/compress/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<metadata-artifact status="successful" details="" size="10755" time="1482" location="C:\Users\hai\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.4.1.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.7.6"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="successful" details="" size="241367" time="3662" location="C:\Users\hai\.ivy2\cache\org.apache.commons\commons-compress\jars\commons-compress-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tukaani" name="xz">
+			<revision name="1.0" status="release" pubdate="20111022151446" resolver="public" artresolver="public" homepage="http://tukaani.org/xz/java.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Public Domain"/>
+				<metadata-artifact status="successful" details="" size="1904" time="1442" location="C:\Users\hai\.ivy2\cache\org.tukaani\xz\ivy-1.0.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.tukaani\xz\ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.0/xz-1.0.pom"/>
+				<caller organisation="org.apache.commons" name="commons-compress" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="xz" type="jar" ext="jar" status="successful" details="" size="94672" time="2850" location="C:\Users\hai\.ivy2\cache\org.tukaani\xz\jars\xz-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.0/xz-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.0.5" status="release" pubdate="20130517070557" resolver="public" artresolver="public" homepage="http://github.com/xerial/snappy-java/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="12731" time="2899" location="C:\Users\hai\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.0.5.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.0.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.7.6"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="successful" details="" size="1251514" time="10982" location="C:\Users\hai\.ivy2\cache\org.xerial.snappy\snappy-java\bundles\snappy-java-1.0.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.3" status="release" pubdate="20101019184431" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<metadata-artifact status="successful" details="" size="1591" time="1598" location="C:\Users\hai\.ivy2\cache\com.thoughtworks.paranamer\paranamer\ivy-2.3.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\com.thoughtworks.paranamer\paranamer\ivy-2.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="1.7.6"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="successful" details="" size="29555" time="1996" location="C:\Users\hai\.ivy2\cache\com.thoughtworks.paranamer\paranamer\jars\paranamer-2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.13" status="release" pubdate="20130715083750" resolver="public" artresolver="public" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1506" time="1792" location="C:\Users\hai\.ivy2\cache\org.codehaus.jackson\jackson-mapper-asl\ivy-1.9.13.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.codehaus.jackson\jackson-mapper-asl\ivy-1.9.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.7.6"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="successful" details="" size="780664" time="11165" location="C:\Users\hai\.ivy2\cache\org.codehaus.jackson\jackson-mapper-asl\jars\jackson-mapper-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.13" status="release" pubdate="20130715083730" resolver="public" artresolver="public" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1279" time="1618" location="C:\Users\hai\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\ivy-1.9.13.xml" searched="true" original-local-location="C:\Users\hai\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\ivy-1.9.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.7.6"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.9.13"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="successful" details="" size="232248" time="3922" location="C:\Users\hai\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
