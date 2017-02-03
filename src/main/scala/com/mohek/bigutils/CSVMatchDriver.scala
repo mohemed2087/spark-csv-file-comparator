@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Job
 import org.apache.spark.sql.SQLContext
 import scala.collection.mutable.Map
 
-object ScoreMatchDriver extends Serializable {
+object CSVMatchDriver extends Serializable {
 
   // Determine if running on developer machine
   private val isWindows = sys.props("os.name").toLowerCase match {
