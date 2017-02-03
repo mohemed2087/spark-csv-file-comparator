@@ -5,7 +5,7 @@ Description: A utility developed in Spark for comparing two CSV files with same 
 
 Usage :
 
-spark-submit <master file location><location of file to compare><Output location>
+spark-submit... <master file location><location of file to compare><Output location>
 
 In this version, The final comparison or match summary can be viewed in text file which is generated in the output location with below format.
 
